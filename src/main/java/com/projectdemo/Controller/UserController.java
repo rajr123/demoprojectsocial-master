@@ -30,6 +30,8 @@ public class UserController {
     private UserRepository userRepo;
 	@Autowired
 	private FollowersRepository followerrepo;
+	@RequestMapping("/users")  
+    public String hello(){  return "Hello user";  }  
 	
 	@PostMapping("users/save")
     public ResponseEntity<ResponseObjectService> saveUser(@RequestBody User inputUser) {
