@@ -17,7 +17,6 @@ public class User {
 	private long phonenumber;
 	private String photoaddress;
 	private boolean enabled=false;
-	public User(){	}
 	public User(int userid, String username, String email, String password, String bio, long phonenumber,
 			String photoaddress, boolean enabled) {
 		super();
